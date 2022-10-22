@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Lato, 'Encode Sans Expanded', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+* {
+    scroll-behavior: smooth;
+}
