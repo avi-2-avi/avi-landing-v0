@@ -3,11 +3,11 @@
 </script>
 
 <header>
-    <nav class="absolute w-screen justify-between items-center navbar flex sm:bg-stone-100">
+    <nav class="fixed w-screen justify-between items-center navbar flex z-100">
         <ul class="list-none justify-start sm:flex hidden flex-1 ml-2">
             {#each navLinks as nav}
                 <li class="mx-6 my-5">
-                    <a href="#{nav.id}" class="text-black">{nav.title}</a>
+                    <a href="#{nav.id}">{nav.title}</a>
                 </li>
             {/each}
         </ul>

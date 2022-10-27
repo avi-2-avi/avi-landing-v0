@@ -1,5 +1,5 @@
 <script lang="ts">
-    import pattern from "../static/images/pattern.jpg";
+    import pattern from "../static/images/pattern.png";
     import styles from "../styles"
 </script>
 
@@ -7,7 +7,7 @@
     <div class="flex flex-col lg:mr-12">
         <h1 class="font-encode sm:text-6xl text-5xl">
             Hi, I'm Avi.<br class="sm:block hidden" /> { " "}
-            <span class="font-bold">A Software <br/>Engineer</span>
+            <span class="font-bold text-[#AABAD7]">A Software <br/>Engineer</span>
         </h1>
         <p class="md:max-w-[400px] mt-5 py-6 lg:text-[20px]">
             And a hard-working person, architecting reliable and meaningful solutions in tech.
