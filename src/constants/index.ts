@@ -20,19 +20,6 @@ export const navLinks = [
     },
 ]
 
-export const socialLinks = [
-    {
-        id: "linkedin",
-        icon: linkedin,
-        url: "https://www.linkedin.com/in/cristina-vidal-falcon-1063311b1/",
-    },
-    {
-        id: "github",
-        icon: github,
-        url: "https://github.com/avi-2-avi",
-    },
-]
-
 export const techStack1 = [
     {
         id: "python",

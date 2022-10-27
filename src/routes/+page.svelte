@@ -1,22 +1,22 @@
 <script lang="ts">
     import pattern from "../static/images/pattern.png";
     import styles from "../styles"
+
 </script>
 
-<section id="home" class="flex md:flex-row flex-col py-10 mx-5">
+<section id="home" class="flex md:flex-row flex-col py-20 md:py-10 mx-5">
     <div class="flex flex-col lg:mr-12">
-        <h1 class="font-encode sm:text-6xl text-5xl">
+        <h1 class="font-encode sm:text-6xl text-5xl text-white">
             Hi, I'm Avi.<br class="sm:block hidden" /> { " "}
-            <span class="font-bold text-[#AABAD7]">A Software <br/>Engineer</span>
+            <span class="font-bold text-secondary">A Software <br/>Engineer</span>
         </h1>
         <p class="md:max-w-[400px] mt-5 py-6 lg:text-[20px]">
             And a hard-working person, architecting reliable and meaningful solutions in tech.
         </p>
     </div>
     <div class="md:my-0 py-0 sm:py-12">
-        <img src={pattern} alt="pattern" class="h-[360px] object-contain" />
+        <img src={pattern} alt="pattern" class="p-6 rounded-full ring ring-[#1b1e25] object-contain" />
     </div>
-    
 </section>
 
 <section id="about" class="flex flex-col md:flex-row">
