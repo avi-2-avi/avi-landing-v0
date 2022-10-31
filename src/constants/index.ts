@@ -20,32 +20,39 @@ export const navLinks = [
     },
 ]
 
-export const techStack1 = [
+export const techStack = [
     {
         id: "python",
-        title: "Python (FastAPI)"
+        title: "Python (FastAPI)",
+        icon: "bxl:python"
     },
     {
         id: "aws",
-        title: "AWS and SAM"
+        title: "AWS and SAM",
+        icon: "bxl:aws"
     },
     {
         id: "docker",
-        title: "Docker"
+        title: "Docker",
+        icon: "bxl:docker"
     },
 ]
 
 export const techStack2 = [
     {
         id: "react",
-        title: "React"
+        title: "React",
+        icon: "bxl:react"
     },
     {
         id: "ql",
-        title: "SQL and NoSQL DBs"
+        title: "SQL/NoSQL DBs",
+        icon: "charm:database"
     },
     {
         id: "cpp",
-        title: "C++"
+        title: "C++",
+        icon: "bxl:c-plus-plus"
     }
 ]
+
