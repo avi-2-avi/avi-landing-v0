@@ -3,8 +3,13 @@
     import styles from "../styles"
     import { techStack, techStack2, experience } from "../constants";
     import Icon from '@iconify/svelte';
-    
+
     let current = '0';
+    
+    function openLink() {
+        window.open("mailto:avicon95@proton.me")
+    }
+    
 </script>
 
 <section id="home" class="flex md:flex-row flex-col py-20 mx-12">
@@ -22,7 +27,7 @@
     </div>
 </section>
 
-<section id="about" class="flex flex-col md:flex-row">
+<section id="about" class="flex flex-col md:flex-row mb-12">
     <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]">
         <h2 class="{styles.heading2}">
             About Me
@@ -62,7 +67,7 @@
 </section>
 
 <section id="experience">
-    <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]">
+    <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%] my-[8%]">
         <h2 class="{styles.heading2}">My work Experience</h2>
         <div class="flex flex-col md:flex-row">
             <div class="overflow-x-auto md:min-w-fit mr-10">
@@ -99,6 +104,25 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id=projects>
+    <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]">
+        <h2 class={styles.heading2}>My Projects:</h2>
+    <div>
+    Comming soon...
+</section>
+
+<section id=contact class="flex justify-around mb-[8%]">
+    <div class="card w-[50%] bg-neutral text-neutral-content px-10 py-7">
+        <div class="card-body items-center text-center">
+            <h3 class="card-title">Get in touch with me!</h3>
+                <p>I am currently looking for a new work experience. Feel free to contact me through my <a href="https://www.linkedin.com/in/cristina-vidal-falcon-1063311b1/" class="font-semibold hover:text-primary">LinkedIn</a> or mail and I’ll get back to you as soon as I can. You can send me a message in English or Spanish.</p>
+                <div class="card-actions justify-end">
+                <button class="btn btn-primary mt-4" on:click="{openLink}">Write me a message</button>
+            </div>
+        </div>
+  </div>
 </section>
 
 <style>
