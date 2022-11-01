@@ -1,5 +1,3 @@
-import github from "../static/icons/github.svg";
-import linkedin from "../static/icons/linkedin.svg";
 
 export const navLinks = [
     {
@@ -99,5 +97,50 @@ export const experience = [
         goals: [
             "Organization of projects concerning the evaluation of quality in the production of military and civil aircraft."
         ]
+    },
+]
+
+export const projects = [
+    {
+        id: 0,
+        title: "Focus Landing Page",
+        description: "Landing Page of the invented company Focus, which offers a mobile and web application for time-management for students.",
+        repo: "https://github.com/iFocusNow/landing-page",
+        logos: ["bxl:html5", "bxl:css3", "bxl:javascript"]
+    },
+    {
+        id: 1,
+        title: "Personal Landing Page",
+        description: "Test version of my Landing Page done with Svelte and TailwindCSS, using components from DaisyUI component library.",
+        repo: "https://github.com/avi-2-avi/avi-landing-v0",
+        logos: ["carbon:logo-svelte", "bxl:tailwind-css", "bxl:typescript"]
+    },
+    {
+        id: 2,
+        title: "Karnaugh Map Solver",
+        description: "Graphic User Interface program made with Tkinter which constructs a Karnaugh Map from a truth table.",
+        repo: "https://github.com/avi-2-avi/karnaugh-gui",
+        logos: ["bxl:python"]
+    },
+    {
+        id: 3,
+        title: "Planification Processes",
+        description: "Script simulating FIFO and SJF processes scheduling algorithms.",
+        repo: "https://github.com/avi-2-avi/planification-processes",
+        logos: ["bxl:go-lang"]
+    },
+    {
+        id: 4,
+        title: "Kirby Recycle Deluxe",
+        description: "Fan game of the Kirby series, made with C++.",
+        repo: "https://github.com/avi-2-avi/kirby-recycle-deluxe",
+        logos: ["bxl:c-plus-plus"]
+    },
+    {
+        id: 5,
+        title: "Sifind",
+        description: "Word detector of most common words in the Peruvian dictionary, made with Python.",
+        repo: "https://github.com/avi-2-avi/sifind",
+        logos: ["bxl:python", "carbon:logo-jupyter"]
     },
 ]

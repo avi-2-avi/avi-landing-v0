@@ -4,7 +4,7 @@
 </script>
 
 <header>
-    <nav class="fixed w-screen justify-between items-center flex z-100 bg-base-100">
+    <nav class="fixed w-screen justify-between items-center flex z-50 bg-base-100">
         <ul class="list-none justify-start sm:flex hidden flex-1 ml-2">
             {#each navLinks as nav}
                 <li class="mx-6 my-5 hover:text-white">

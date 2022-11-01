@@ -1,7 +1,7 @@
 <script lang="ts">
     import pattern from "../static/images/pattern.png";
     import styles from "../styles"
-    import { techStack, techStack2, experience } from "../constants";
+    import { techStack, techStack2, experience, projects } from "../constants";
     import Icon from '@iconify/svelte';
 
     let current = '0';
@@ -9,7 +9,6 @@
     function openLink() {
         window.open("mailto:avicon95@proton.me")
     }
-    
 </script>
 
 <section id="home" class="flex md:flex-row flex-col py-20 mx-12">
@@ -27,7 +26,7 @@
     </div>
 </section>
 
-<section id="about" class="flex flex-col md:flex-row mb-12">
+<section id="about" class="flex flex-col md:flex-row mb-[10%]">
     <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]">
         <h2 class="{styles.heading2}">
             About Me
@@ -66,8 +65,8 @@
     </div>
 </section>
 
-<section id="experience">
-    <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%] my-[8%]">
+<section id="experience" class="mb-[10%]">
+    <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]favi">
         <h2 class="{styles.heading2}">My work Experience</h2>
         <div class="flex flex-col md:flex-row">
             <div class="overflow-x-auto md:min-w-fit mr-10">
@@ -106,19 +105,39 @@
     </div>
 </section>
 
-<section id=projects>
+<section id=projects class="mb-[10%]">
     <div class="flex flex-col py-12 mx-[6%] md:mx-[20%] xl:mx-[20%]">
         <h2 class={styles.heading2}>My Projects:</h2>
     <div>
-    Comming soon...
+    <div class="grid grid-cols-1 ss:grid-cols-2 md:grid-cols-3 gap-3">
+        {#each projects as project}
+            <div class="card bg-neutral">
+                <div class="card-body">
+                <div class="card-actions justify-end mb-2">
+                    <a href={project.repo}><Icon icon="akar-icons:github-fill" color="primary" class="hover:text-secondary" width="30px"/></a>
+                </div>
+                <h2 class="card-title text-secondary">
+                    {project.title}
+                </h2>
+                <p>{project.description}</p>
+                    <div class="card-actions justify-start mt-4">
+                        {#each project.logos as logo}
+                            <Icon icon={logo} color="primary" class="hover:text-secondary mr-2" width="30px"/>
+                        {/each}
+                    </div>
+                </div>
+            </div>
+        {/each}
+
+    </div>
 </section>
 
-<section id=contact class="flex justify-around mb-[8%]">
-    <div class="card w-[50%] bg-neutral text-neutral-content px-10 py-7">
+<section id=contact class="flex justify-around mb-[10%]">
+    <div class="card w-[90%] ss:w-[65%] md:w-[50%] bg-neutral text-neutral-content px-10 py-7">
         <div class="card-body items-center text-center">
             <h3 class="card-title">Get in touch with me!</h3>
                 <p>I am currently looking for a new work experience. Feel free to contact me through my <a href="https://www.linkedin.com/in/cristina-vidal-falcon-1063311b1/" class="font-semibold hover:text-primary">LinkedIn</a> or mail and I’ll get back to you as soon as I can. You can send me a message in English or Spanish.</p>
-                <div class="card-actions justify-end">
+                <div class="card-actions justify-center">
                 <button class="btn btn-primary mt-4" on:click="{openLink}">Write me a message</button>
             </div>
         </div>
