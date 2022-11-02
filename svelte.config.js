@@ -15,6 +15,7 @@ const config = {
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
+			fallback: "index.html"
 		}),
 		paths: {
 			base: dev ? '' : '/avi-landing-v0',
