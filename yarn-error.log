@@ -1,0 +1,66 @@
+Arguments: 
+  /home/avi/.nvm/versions/node/v16.17.0/bin/node /home/avi/.nvm/versions/node/v16.17.0/bin/yarn
+
+PATH: 
+  /home/avi/.local/share/pnpm:/home/avi/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/home/avi/.local/bin:/home/avi/.local/share/pnpm:/home/avi/.cargo/bin:/home/avi/.nvm/versions/node/v16.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/USUARIO/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/USUARIO/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/usr/local/go/bin:/home/avi/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/home/avi/.cache/yarn/v6/npm-estraverse-4.3.0-398ad3f3c5a24948be7725e83d11a7de28cdbd1d-integrity/node_modules/estraverse/.jshintrc' -> '/home/avi/projects/avi-landing-v0/node_modules/@typescript-eslint/utils/node_modules/estraverse/.jshintrc'
+
+npm manifest: 
+  {
+  	"name": "avi-landing-v0",
+  	"version": "0.0.1",
+  	"private": true,
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+  		"format": "prettier --plugin-search-dir . --write ."
+  	},
+  	"devDependencies": {
+  		"@iconify/svelte": "^3.0.0",
+  		"@sveltejs/adapter-auto": "next",
+  		"@sveltejs/adapter-static": "1.0.0-next.47",
+  		"@sveltejs/kit": "next",
+  		"@typescript-eslint/eslint-plugin": "^5.27.0",
+  		"@typescript-eslint/parser": "^5.27.0",
+  		"autoprefixer": "^10.4.12",
+  		"eslint": "^8.16.0",
+  		"eslint-config-prettier": "^8.3.0",
+  		"eslint-plugin-svelte3": "^4.0.0",
+  		"postcss": "^8.4.18",
+  		"prettier": "^2.6.2",
+  		"prettier-plugin-svelte": "^2.7.0",
+  		"svelte": "^3.44.0",
+  		"svelte-check": "^2.7.1",
+  		"svelte-preprocess": "^4.10.7",
+  		"svelthree": "0.119.0-5",
+  		"tailwindcss": "^3.2.1",
+  		"tslib": "^2.3.1",
+  		"typescript": "^4.7.4",
+  		"vite": "^3.1.0"
+  	},
+  	"type": "module",
+  	"dependencies": {
+  		"daisyui": "^2.33.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
