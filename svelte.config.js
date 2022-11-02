@@ -19,7 +19,6 @@ const config = {
 		paths: {
 			base: dev ? '' : '/avi-landing-v0',
 		},
-		appDir: 'src'
 	}
 };
 
